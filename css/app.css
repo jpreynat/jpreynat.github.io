@@ -1,242 +1,55 @@
-body, h1, h2, h3, h4, h5, h6,
-p, div, dl, dd, dt, li, td {
-  font-family: Raleway, 'Ek Mukta', sans-serif;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'IM Fell English', serif;
-  color: #FAFAFA;
-}
-
-body {
-  box-sizing: border-box;
-  width: 100%;
-  max-height: 100%;
-}
-
-.text-center {
-  text-align: center;
-}
-
-#main {
-  position: relative;
-  min-width: 100%;
+html {
+  margin: 0;
   height: 100%;
 }
 
-#contact {
-  display: table;
-  float: left;
-  min-height: 100%;
-  max-height: 100%;
-  width: 50%;
+body {
   margin: 0;
-  background-color: #EF5350;
+  box-sizing: border-box;
+  height: 100%;
+  font-family: Roboto, sans-serif;
+  text-align: center;
 }
 
-#contact h1 {
-  margin-bottom: 30px;
-  font-family: Tangerine, cursive;
-  font-weight: 700;
+#background {
+  position: relative;
+  height: 100%;
+  min-width: 100%;
+  background-color: rgba(0, 128, 128, 1);
 }
 
-#contact h2 {
-  margin-bottom: 0;
-  line-height: 1;
-}
-
-#contact h5 {
-  margin-bottom: 30px;
-  font-weight: 300;
-  font-family: Raleway;
-}
-
-#contact .insider {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-#contact p.websites {
-  font-size: 1rem;
-  font-weight: 300;
-}
-
-#contact div.active-websites {
-  margin-top: 2.5rem;
+#main {
+  position: absolute;
+  min-width: 100%;
+  top: 50px;
+  text-align: center;
+  color: white;
 }
 
 #portrait {
+  max-width: 200px;
   border-radius: 100%;
-  max-height: 200px;
-  height: 200px;
-  opacity: 0.75;
 }
 
-#content {
-  background-color: #0097A7;
-  min-height: 100%;
-  max-height: 100%;
-  width: 50%;
-  margin: 0;
-  overflow-y: scroll;
-  float: left;
+h1 {
+  margin-bottom: 10px;
 }
 
-.insider p {
-  font-size: 1.1rem;
-  margin-bottom: 0;
-  font-weight: 300;
-  color: #FAFAFA;
+h2 {
+  margin: 0 auto 50px;
+  font-weight: 400;
+  font-family: Caveat, cursive;
 }
 
-.insider a {
-  /*color: #B3E5FC;*/
-  color: #B2EBF2;
+p {
+  font-weight: 500;
+  margin: 5px;
 }
 
-div.insider {
-  width: 100%;
-}
-
-div.topic {
-  width: 50%;
-  float: left;
-  margin: 3rem auto 0;
-  text-align: center;
-}
-
-div.topic:last-child {
-  margin-bottom: 3rem;
-}
-
-#content h2 {
-  margin: -5px auto 15px;
-  line-height: 1;
-  font-family: Tangerine, cursive;
-}
-
-ul.topic-items {
-  width: 100%;
-  margin: 1rem 0 0;
-}
-
-ul.topic-items > li {
-  color: #FAFAFA;
-  font-weight: 300;
-  font-size: 1.1rem;
-  list-style: none;
-}
-
-div.topic-header {
-  width: 100%;
-  text-align: center;
-}
-
-.hide-sm {
-  display: normal;
-}
-
-.hide-lg {
-  display: none;
-}
-
-@media (max-width: 840px) {
-  #contact, #content {
-    float: none;
-    width: 100%;
-    height: auto;
-  }
-  
-  #contact h5 {
-    font-size: 1rem;
-    font-weight: 300;
-  }
-  
-  #portrait {
-    margin-top: 30px;
-  }
-  
-  #contact .insider p:last-child {
-    margin-bottom: 30px;
-  }
-  
-  #contact .insider p,
-  #contact .insider a {
-    font-size: 1rem;
-    font-weight: 300;
-    color: #FAFAFA;
-  }
-}
-
-@media (max-width: 640px) {
-  #contact, #content {
-    float: none;
-    width: 100%;
-    height: auto;
-  }
-  
-  #contact h2 {
-    font-size: 1.5rem;
-  }
-  
-  #contact h5 {
-    font-size: 1rem;
-    font-weight: 300;
-  }
-  
-  #content h2 {
-    font-size: 2rem;
-  }
-  
-  #contact .insider p,
-  #contact .insider a {
-    font-size: 1rem;
-    font-weight: 300;
-    color: #FAFAFA;
-  }
-  
-  #contact .insider p:last-child {
-    margin-bottom: 30px;
-  }
-  
-  #portrait {
-    max-height: 150px;
-    margin-top: 30px;
-  }
-}
-
-@media (max-width: 480px) {
-  .hide-sm {
-    display: none;
-  }
-  
-  .hide-lg {
-    display: block;
-  }
-  
-  #contact h5 {
-    font-size: 1rem;
-    font-weight: 300;
-  }
-  
-  #content h2 {
-    font-size: 2rem;
-  }
-  
-  #contact .insider p,
-  #contact .insider a {
-    font-size: 1.1rem;
-  }
-  
-  #contact div.active-websites {
-    margin-top: 1rem;
-  }
-  
-  #contact .insider a {
-    font-weight: 300;
-  }
-  
-  ul.topic-items > li {
-    font-size: 1.1rem;
-  }
+a,
+a:hover,
+a:visited,
+a:focus {
+  text-decoration: none;
+  color: #dbe263;
 }
